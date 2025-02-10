@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Status Dashboard</title>
+    <style>
+        /* Some basic styling for the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Status Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Link</th>
+                <th>Status</th>
+                <th>Description</th>
+                <th>Email Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for website in websites %}
+            <tr>
+                <!-- The link is clickable -->
+                <td>{{ website.name }}</td>
+                <td><a href="{{ website.url }}">{{ website.url }}</a></td>
+                <td>{{ website.status }}</td>
+                <td>{{ website.description }}</td>
+                <td><a href="mailto:{{ website.email }}">{{website.contact_name}}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

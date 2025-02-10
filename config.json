@@ -1,0 +1,25 @@
+{
+  "websites": [
+    {
+      "name": "Example",
+      "url": "https://example.com",
+      "description": "Example website",
+      "contact_name": "Alex Avery",
+      "email": "contact@example.com"
+    },
+    {
+      "name": "Google",
+      "url": "https://google.ca",
+      "description": "A powerful search engine",
+      "contact_name": "Bobby Bog",
+      "email": "info@another-example.com"
+    },
+    {
+      "name": "StackOverflow",
+      "url": "https://stackoverflow.com/questions",
+      "description": "here is a longer description that aims to span multiple lines of text so I keep typing",
+      "contact_name": "Chance Clementine",
+      "email": "info@another-example.com"
+    }
+  ]
+}
